@@ -1,4 +1,4 @@
-# F-B-Marketing-Insights
+# Food and Beverage-Marketing-Insights
  Provide Insights to the Marketing Team in Food & Beverage Industry
 
 # Project Background
