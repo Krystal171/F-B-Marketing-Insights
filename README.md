@@ -1,115 +1,72 @@
-# Food and Beverage-Marketing-Insights
- Provide Insights to the Marketing Team in Food & Beverage Industry
+# Development of UKI Bike Share Dashboard
+ Develop a dashboard for "UKI Bike Share" that displays our key performance metrics for informed decision-making
 
-# Project Background
-Choco is a German beverage company that is aiming to make its mark in the Indian market. A few months ago, they launched their energy drink in 10 cities in India.
-Their Marketing team is responsible for increasing brand awareness, market share, and product development. They conducted a survey in those 10 cities and received results from 10k respondents
-As a marketing data analyst, is tasked to convert these survey results to meaningful insights which the team can use to drive actions.
+# Project Requirement
+- Hourly Revenue Analysis
+- Profit and Revenue Trends
+- Seasonal Revenue
+- Rider Demographics
 
-- **Category 1:** 
-- **Category 2:** 
-- **Category 3:** 
-- **Category 4:** 
+An interactive PowerBI dashboard can be downloaded [here](https://app.powerbi.com/view?r=eyJrIjoiNjIxODMxZTgtZmQ1MS00NjI1LTg2MTItYTBkNGZjMjM1NTA2IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
 
+The SQL queries utilized to perpare data for the dashboard can be found [here]
 
 # Data Structure & Initial Checks
 
-The companies main database structure as seen below consists of four tables: table1, table2, table3, table4, with a total row count of X records. A description of each table is as follows:
-- **Table 2:**
-- **Table 3:**
-- **Table 4:**
-- **Table 5:**
-
-[Entity Relationship Diagram here]
-
-
+The companies main database structure as seen below consists of three tables: bike_share_yr_0, bike_share_yr_1, cost_table, with a total row count of 34758 records. A description of each table is as follows:
+bike_share_yr_0, bike_share_yr_1 -> dteday,season,yr,mnth,hr,holiday,weekday,workingday,weathersit,temp,atemp,hum,windspeed,rider_type,riders
+cost_table -> yr,price,COGS
 
 # Executive Summary
 
 ### Overview of Findings
 
-Explain the overarching findings, trends, and themes in 2-3 sentences here. This section should address the question: "If a stakeholder were to take away 3 main insights from your project, what are the most important things they should know?" You can put yourself in the shoes of a specific stakeholder - for example, a marketing manager or finance director - to think creatively about this section.
+This dashboard displays hourly sales data across a week, with higher earnings in midday and early evening hours, particularly around 10 to 15 hours. suggesting these are the most profitable times. Days like Wednesday and Friday show notably higher sales, indicating variable profitability across the week. 
 
-[Visualization, including a graph of overall trends or snapshot of a dashboard]
+Below is the overview from the PowerBi dashboard: 
 
+![image](https://github.com/user-attachments/assets/a6004df4-dead-4515-8c87-30eacd141c19)
 
 
 # Insights Deep Dive
-### Category 1:
+### Rider Demographics:
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+- The number of riders doubled from 1M in 2021 to 2M in 2022 which indicates a substantial increase in customer base, contributing to revenue growth.
+- In 2021, registered riders accounted for 80.11%, and casual riders for 19.89%. and in 2022, registered riders slightly increased to 81.81%, and casual riders dropped to 18.19%.
+This suggests a growing preference for long-term commitment among riders.
 
-[Visualization specific to category 1]
+### KPI Over Time:
+Monthly Trends:
 
+Revenue and profit followed similar growth trends in both years, peaking during summer months (June to August).
+Rider counts showed significant increases during peak months in 2022 compared to 2021. The business continues to benefit from seasonality but is scaling consistently across months.  
 
-### Category 2:
+### Hourly Sales Patterns:
+Profitable Hours:
+The most profitable hours (midday and early evening, around 10 AM to 3 PM) remain consistent across both years.
+However, the absolute revenue earned during these hours increased significantly in 2022.
 
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
+Day Impact: 
+Midweek days like Wednesday and Friday continue to show higher sales.
 
-[Visualization specific to category 2]
-
-
-### Category 3:
-
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-
-[Visualization specific to category 3]
-
-
-### Category 4:
-
-* **Main insight 1.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 2.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 3.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-  
-* **Main insight 4.** More detail about the supporting analysis about this insight, including time frames, quantitative values, and observations about trends.
-
-[Visualization specific to category 4]
-
+### Overall Summary:
+The business exhibited significant growth in all aspects from 2021 to 2022, doubling revenue, profit, and rider base.
+Growth was consistent across all seasons and key time frames, with registered riders showing stronger engagement.
+The sustained profit margin reflects effective cost management alongside expansion.
 
 
 # Recommendations:
 
-Based on the insights and findings above, we would recommend the [stakeholder team] to consider the following: 
+Based on the insights and findings above, we would recommend the marking team to consider the following: 
 
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
-* Specific observation that is related to a recommended action. **Recommendation or general guidance based on this observation.**
-  
+Conservative Increase: Considering the substantial increase last year, a more conservative increase might be prudent to avoid hitting a price ceiling where demand starts to drop. An ioncrease in the range of 10-20% could test the market's response withoud risking a significant loss of customeres. 
+Price Setting:
+- If the price in 2022 was 4.99$, a 10% increase would make the new price about $5.49.
+- Or a 15% increase would set at $5.74
 
+Recommendation Strategy: 
+Market Analysis: Conduct further market research to understand customer satisfaction, potential competitive changes, and the overall economic environment. This can guide whether leaning towards the lower or higher end of the suggested price increase. 
 
-# Assumptions and Caveats:
+Segmented Pricing Strategy: Consider different pricing for casual versus registered users, as they may have different price sensitivities. 
 
-Throughout the analysis, multiple assumptions were made to manage challenges with the data. These assumptions and caveats are noted below:
-
-* Assumption 1 (ex: missing country records were for customers based in the US, and were re-coded to be US citizens)
-  
-* Assumption 1 (ex: data for December 2021 was missing - this was imputed using a combination of historical trends and December 2020 data)
-  
-* Assumption 1 (ex: because 3% of the refund date column contained non-sensical dates, these were excluded from the analysis)
+Monitor and adjust: Implement the new prices but be ready to adjust based on immediate customer feedback and sales data. Monitoring closely will allow you to fine-tune your pricing strategy without committing fully to a price that might turn out to be too high.
